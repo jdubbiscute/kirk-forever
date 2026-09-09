@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kirk Forever ($KIRK)</title>
+  <meta name="description" content="Kirk Forever ($KIRK) — an unofficial community-created token on Robinhood Chain." />
+  <style>
+    :root{
+      --bg:#07111f;
+      --panel:#0d1a2b;
+      --text:#f6f7fb;
+      --muted:#b8c2d1;
+      --gold:#e8bd61;
+      --line:#22324a;
+      --red:#d94b4b;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:linear-gradient(180deg,#07111f 0%,#0a1526 55%,#07111f 100%);
+      color:var(--text);
+      line-height:1.55;
+    }
+    a{color:inherit}
+    .wrap{max-width:1120px;margin:auto;padding:0 24px}
+    .hero{
+      min-height:72vh;
+      display:flex;
+      align-items:end;
+      background:
+        linear-gradient(180deg,rgba(3,8,16,.08),rgba(3,8,16,.88)),
+        url('kirk-banner.png') center/cover no-repeat;
+      border-bottom:1px solid var(--line);
+    }
+    .hero-inner{padding:72px 0 48px}
+    .eyebrow{color:var(--gold);font-weight:700;letter-spacing:.18em;text-transform:uppercase;font-size:.82rem}
+    h1{font-size:clamp(3rem,8vw,6.8rem);line-height:.9;margin:.35rem 0 1rem}
+    .tag{font-size:clamp(1.1rem,2.2vw,1.6rem);color:#e9edf4;max-width:720px}
+    .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+    .btn{
+      display:inline-block;padding:13px 18px;border-radius:12px;text-decoration:none;
+      border:1px solid var(--gold);font-weight:700
+    }
+    .btn.primary{background:var(--gold);color:#111827}
+    .btn.secondary{background:rgba(255,255,255,.04)}
+    section{padding:64px 0}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:rgba(13,26,43,.9);border:1px solid var(--line);border-radius:18px;padding:22px}
+    .card h3{margin-top:0;color:var(--gold)}
+    .token{
+      display:grid;grid-template-columns:220px 1fr;gap:30px;align-items:center
+    }
+    .token img{width:100%;border-radius:50%;border:2px solid var(--gold)}
+    .contract{
+      display:block;padding:14px 16px;border-radius:12px;background:#08111f;border:1px solid var(--line);
+      word-break:break-all;font-family:ui-monospace,SFMono-Regular,Menlo,monospace
+    }
+    .muted{color:var(--muted)}
+    .notice{
+      border-left:4px solid var(--gold);padding:16px 18px;background:#0c1828;border-radius:10px
+    }
+    footer{padding:34px 0 48px;border-top:1px solid var(--line);color:var(--muted);font-size:.95rem}
+    @media (max-width:800px){
+      .grid{grid-template-columns:1fr}
+      .token{grid-template-columns:1fr}
+      .token img{max-width:220px}
+      .hero{min-height:58vh}
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap hero-inner">
+      <div class="eyebrow">Robinhood Chain • Community Token</div>
+      <h1>KIRK FOREVER</h1>
+      <p class="tag">People. Principles. Possibility. An unofficial community-created token commemorating Charlie Kirk's legacy.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="https://robinhoodchain.blockscout.com/token/0x4A114A14517acf7366A7fdd8A233fa4e2dF8EeD1" target="_blank" rel="noopener">View on Blockscout</a>
+        <a class="btn secondary" href="https://x.com/" target="_blank" rel="noopener">Follow on X</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="wrap token">
+        <img src="kirk-logo.png" alt="Kirk Forever token logo" />
+        <div>
+          <div class="eyebrow">$KIRK</div>
+          <h2>Token Information</h2>
+          <p class="muted">Network: Robinhood Chain</p>
+          <p><strong>Contract address</strong></p>
+          <code class="contract">0x4A114A14517acf7366A7fdd8A233fa4e2dF8EeD1</code>
+          <p class="muted">Always verify the contract address before interacting with the token.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="grid">
+          <div class="card">
+            <h3>Community First</h3>
+            <p>Kirk Forever is presented as a community-created token and tribute project.</p>
+          </div>
+          <div class="card">
+            <h3>On-Chain</h3>
+            <p>The token is deployed on Robinhood Chain and can be independently checked using the public block explorer.</p>
+          </div>
+          <div class="card">
+            <h3>Transparency</h3>
+            <p>Use the contract address above as the source of truth when verifying the token.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <h2>How to Verify</h2>
+        <div class="notice">
+          Open the Blockscout link above, confirm the token name is <strong>Kirk Forever (KIRK)</strong>, and verify the contract address matches exactly.
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <h2>Disclaimer</h2>
+        <p class="muted">
+          Kirk Forever (KIRK) is an unofficial, community-created token. It is not affiliated with or endorsed by Charlie Kirk's family or estate, Turning Point USA, Robinhood, or Robinhood Chain. Nothing on this site is financial advice. Digital assets are highly speculative and can lose value.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© 2026 Kirk Forever Community • $KIRK</div>
+  </footer>
+</body>
+</html>
